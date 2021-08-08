@@ -55,6 +55,8 @@ button {
 }
 #greeting {
     font-size: 30px;
+    width: 100%;
+    text-align: center;
 }
 #todo-form {
     position: absolute;
@@ -123,4 +125,45 @@ button {
 }
 #weather span {
     color: rgba(255,255,255,0.7);
+}
+
+/* 800px 이하 */
+@media all and (max-width: 800px) {
+    #clock {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    input {
+        font-size: 20px;
+        max-width: 80%;
+    }
+    button {
+        font-size: 20px;
+    }
+    #greeting {
+        font-size: 25px;
+    }
+    #todo-list {
+        max-width: 80%;
+    }
+    #todo-list li {
+        font-size: 22px;
+    }
+    #todo-list li button {
+        font-size: 12px;
+    }
+    #todo-list li.done .checkbox::before {
+        top: -15px;
+    }
+    #todo-list li.done .text::before {
+        height: 3px;
+    }
+    .checkbox {
+        width: 13px;
+        height: 13px;
+    }
+    #weather {
+        right: 10px;
+        font-size: 12px;
+    }
 }
